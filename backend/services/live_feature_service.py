@@ -660,7 +660,7 @@ def build_prediction_features(city):
 
     latest_row = df.iloc[-1]
     feature_dict = latest_row.to_dict()
-
+    
     missing_features = [
 
         col

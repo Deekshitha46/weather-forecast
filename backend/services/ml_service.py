@@ -18,17 +18,14 @@ print(EXPECTED_FEATURES)
 
 
 def predict_rainfall(feature_dict):
+    
 
+    feature_names = model.get_booster().feature_names
 
-    input_df = pd.DataFrame(
-        [feature_dict]
-    )
-
+    input_df = pd.DataFrame([feature_dict])
 
     input_df = input_df.reindex(
-
-        columns=EXPECTED_FEATURES,
-
+        columns=feature_names,
         fill_value=0
     )
     

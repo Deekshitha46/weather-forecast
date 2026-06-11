@@ -70,16 +70,14 @@ def predict(city: str):
             build_prediction_features
         )
 
-        feature_dict = build_prediction_features(
-            city
-        )
-        feature_dict["description"] = weather["description"]
-
-
-        
-
-
-        result = predict_rainfall(feature_dict)
+        try:
+            feature_dict = build_prediction_features(city)
+            result = predict_rainfall(feature_dict)
+        except Exception:
+            result = {
+                "rain_prediction": 0,
+                "rain_probability": 0
+            }
         result["heatwave_risk"] = (
 
             weather["current_temp"] >= 38

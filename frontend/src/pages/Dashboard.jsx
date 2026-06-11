@@ -162,9 +162,10 @@ const Dashboard = () => {
     try {
 
         const weather = await getWeatherPrediction(city)
+        console.log("WEATHER RESPONSE:", weather);
 
         const forecast = await getForecast(city)
-
+        console.log("FORECAST:", forecast)
         setWeatherData(weather)
 
         console.log("FORECAST RESPONSE:", forecast)
