@@ -6,7 +6,7 @@ from datetime import datetime
 
 # API CONFIGURATION
 
-OPENWEATHER_API_KEY = "8e227c557db6f219dfd9b4ec6f91108e"
+OPENWEATHER_API_KEY = "YOUR_API_KEY"
 
 OPENWEATHER_BASE_URL = "https://api.openweathermap.org/data/2.5/"
 
