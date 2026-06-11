@@ -1,0 +1,152 @@
+.assistant-container{
+
+    min-height:100vh;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+    url("../assets/risk-bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+}
+
+
+
+.assistant-box{
+
+    width:550px;
+
+    background:rgba(0,0,0,0.6);
+
+    padding:40px;
+
+    border-radius:20px;
+
+    color:white;
+
+    text-align:center;
+
+    backdrop-filter:blur(10px);
+}
+
+
+
+.assistant-box h1{
+
+    font-size:45px;
+
+    margin-bottom:30px;
+}
+
+
+
+.assistant-box input{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+    color:black;
+
+    background:white;
+}
+
+
+
+.assistant-box button{
+
+    margin-top:20px;
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#00aaff;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+}
+
+
+
+.weather-result{
+
+    margin-top:30px;
+
+    background:rgba(255,255,255,0.1);
+
+    padding:20px;
+
+    border-radius:15px;
+}
+
+
+
+.ai-response{
+
+     width: 100%;
+
+  max-width: 700px;
+
+  margin-top: 30px;
+
+  background: rgba(0,0,0,0.5);
+
+  padding: 30px;
+
+  border-radius: 20px;
+}
+
+
+
+.suggestions-box{
+
+    margin-top:10px;
+
+    background:white;
+
+    border-radius:10px;
+
+    overflow:hidden;
+}
+
+
+
+.suggestion-item{
+
+    padding:12px;
+
+    cursor:pointer;
+
+    color:black;
+
+    border-bottom:1px solid #ddd;
+}
+
+
+
+.suggestion-item:hover{
+
+    background:#f0f0f0;
+}
